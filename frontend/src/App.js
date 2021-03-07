@@ -24,6 +24,10 @@ function App() {
         </tr>
         {tableRowWithLetterList}
       </table>
+      <br></br>
+      <br></br>
+      <br></br>
+      <button>PRINT</button>
     </div>
   );
 }
