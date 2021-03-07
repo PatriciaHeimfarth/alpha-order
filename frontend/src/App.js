@@ -9,7 +9,7 @@ function App() {
           <th>Letter</th>
           <th>Ideas</th>
         </tr>
-      <AlphaTableRow></AlphaTableRow>
+        <AlphaTableRow letter="A" value="Hi"></AlphaTableRow>
       </table>
     </div>
   );

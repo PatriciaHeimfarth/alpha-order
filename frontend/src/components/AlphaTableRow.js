@@ -1,8 +1,8 @@
-function AlphaTableRow() {
+function AlphaTableRow(props) {
     return (
         <tr>
-            <td>A</td>
-            <td>Hello</td>
+            <td>{props.letter}</td>
+            <td>{props.value}</td>
         </tr>
     );
 }
