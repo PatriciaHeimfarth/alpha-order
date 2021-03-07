@@ -1,6 +1,19 @@
 import './App.css';
 import AlphaTableRow from './components/AlphaTableRow';
 
+var alphabet = [];
+var tableRowWithLetterList = [];
+
+for (let i = 0; i < 26; i++) {
+  alphabet.push((i + 10).toString(36).toUpperCase());
+}
+
+alphabet.forEach((item, index) => {
+  tableRowWithLetterList.push(<AlphaTableRow letter={item} value="hi"></AlphaTableRow>);
+})
+
+
+
 function App() {
   return (
     <div>
@@ -9,7 +22,7 @@ function App() {
           <th>Letter</th>
           <th>Ideas</th>
         </tr>
-        <AlphaTableRow letter="A" value="Hi"></AlphaTableRow>
+        {tableRowWithLetterList}
       </table>
     </div>
   );
