@@ -9,7 +9,7 @@ for (let i = 0; i < 26; i++) {
 }
 
 alphabet.forEach((item, index) => {
-  tableRowWithLetterList.push(<AlphaTableRow letter={item} value="hi"></AlphaTableRow>);
+  tableRowWithLetterList.push(<AlphaTableRow letter={item}></AlphaTableRow>);
 })
 
 
