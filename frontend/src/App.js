@@ -1,10 +1,17 @@
 import './App.css';
+import AlphaTableRow from './components/AlphaTableRow';
 
 function App() {
   return (
-   <div>
-     hello
-   </div>
+    <div>
+      <table>
+        <tr>
+          <th>Letter</th>
+          <th>Ideas</th>
+        </tr>
+      <AlphaTableRow></AlphaTableRow>
+      </table>
+    </div>
   );
 }
 
