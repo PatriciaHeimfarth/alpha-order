@@ -17,7 +17,11 @@ alphabet.forEach((item, index) => {
 
 function toPdf() {
   const doc = new jsPDF();
-  doc.text("Hello world!", 10, 10);
+  
+  for(let a = 0; a < alphabet.length; a++) {
+    doc.text(alphabet[a], 10, a * 10 + 10);
+  }
+   
   doc.save("a4.pdf");
 }
 
