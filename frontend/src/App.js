@@ -1,8 +1,11 @@
 import './App.css';
 import AlphaTableRow from './components/AlphaTableRow';
+import { jsPDF } from "jspdf";
 
 var alphabet = [];
 var tableRowWithLetterList = [];
+
+
 
 for (let i = 0; i < 26; i++) {
   alphabet.push((i + 10).toString(36).toUpperCase());
@@ -12,6 +15,11 @@ alphabet.forEach((item, index) => {
   tableRowWithLetterList.push(<AlphaTableRow letter={item}></AlphaTableRow>);
 })
 
+function toPdf() {
+  const doc = new jsPDF();
+  doc.text("Hello world!", 10, 10);
+  doc.save("a4.pdf");
+}
 
 
 function App() {
@@ -27,7 +35,8 @@ function App() {
       <br></br>
       <br></br>
       <br></br>
-      <button>PRINT</button>
+      <button onClick={toPdf}>PRINT</button>
+
     </div>
   );
 }

@@ -3,7 +3,7 @@ function AlphaTableRow(props) {
 
     const handleChange = (event) => {
        // this.setState({ [event.target.name]: event.target.value });
-       alert("hi")
+      // alert("hi")
     }
     
 
